@@ -16,8 +16,9 @@ attr_reader :make
     def initialize(make, colour)
     @make = make
     @colour = colour
+    #could also be @make, @colour = make, colour
     end
-    def car_start(make,colour)
+    def car_start
     puts "Vroom!"
     end    
 
@@ -28,5 +29,9 @@ car1 = Creating_Cars.new("toyota", "white")
 car2 = Creating_Cars.new("tesla", "blue")
 car3 = Creating_Cars.new("kia", "green")
 
-puts car1.car_start
-puts car2.car_start
+puts car1.make
+puts car2.make
+puts car3.colour
+car1.colour = "rainbow"
+car1.car_start
+car2.car_start

@@ -8,19 +8,19 @@
 # earlier, and store the result in a well named variable.
 
 
-NAME = {
-    :first => nil,
-    :last => nil
+name = {
+    first: nil,
+    last: nil
 }
     
-def named(name, first1, last1)
+def update_name(hash, first1, last1)
     
-    NAME[:first] = amelia
-    NAME[:last] = nunn
-    return NAME
+    hash[:first] = first1
+    hash[:last] = last1
+    return hash
 end
 
-puts named(NAME, "amelia", "nunn")
+puts update_name(name, "amelia", "nunn")
 
 
 
